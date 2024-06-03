@@ -81,5 +81,14 @@ while True:
             # O. Listar todos los superhéroes agrupados por tipo de inteligencia
             lista_ordenada_inteligencia = ordenar_full (lambda elemento_i, elemento_j: elemento_i ["inteligencia"] > elemento_j ["inteligencia"], lista_personajes)
             mostrar_elemento_in_lista(lista_ordenada_inteligencia)
+        case "P":
+            salir = input("Seguro que desea salir? Ingrese SI o NO: ")
+            while salir.lower() != "si" and salir.lower() != "no":
+                salir = input("Opcion incorrecta. Seguro que desea salir? Ingrese SI o NO: ")
+            if salir == "si":
+                print ("--------FIN DEL PROGRAMA---------")
+                break
+            else: 
+                continue
     pausar()
 

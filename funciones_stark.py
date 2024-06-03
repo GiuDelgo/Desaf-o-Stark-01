@@ -19,7 +19,7 @@ def validacion_letra(opcion: str)->str:
     Returns:
         str: caracter de tipo string validado
     """
-    while opcion !='A' and opcion !='B' and opcion !=  'C' and opcion !='D' and opcion !='E' and opcion!='F' and opcion != 'G' and opcion != 'H' and opcion !='I' and opcion != 'J' and opcion != 'K' and opcion != 'L' and opcion != 'M' and opcion != 'N' and opcion != 'O':
+    while opcion !='A' and opcion !='B' and opcion !=  'C' and opcion !='D' and opcion !='E' and opcion!='F' and opcion != 'G' and opcion != 'H' and opcion !='I' and opcion != 'J' and opcion != 'K' and opcion != 'L' and opcion != 'M' and opcion != 'N' and opcion != 'O' and opcion !='P':
         opcion = (input("Error. Vuela a ingresar una opción: ")).upper()
     return opcion
 
@@ -47,7 +47,7 @@ def menu_opciones()-> str:
     print ("M. Listar todos los superhéroes agrupados por color de ojos.")
     print("N. Listar todos los superhéroes agrupados por color de pelo.")
     print ("O. Listar todos los superhéroes agrupados por tipo de inteligencia")
-    print ("8 - Salir")
+    print ("P - Salir")
 
     opcion = (input("Ingrese una opción: ")).upper()
     opcion = validacion_letra(opcion)
