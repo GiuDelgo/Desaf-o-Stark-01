@@ -169,11 +169,11 @@ def max_or_min_in_lista (reductora, lista:list)->dict:
         dict: diccionario de la lista con algún valor que cumple ser máximo o mínimo
     """
     try: 
-        max = lista[0]
+        ant = lista[0]
 
-        for elemento in lista:
-            max = reductora (max, elemento)
-        return max 
+        for act in lista[1:]:
+            ant = reductora (ant, act)
+        return ant 
     except IndexError: 
         print("Lista vacía")
 
